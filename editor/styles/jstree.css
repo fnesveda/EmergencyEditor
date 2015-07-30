@@ -1,0 +1,30 @@
+.jstree-contextmenu {
+	/* for an element created by jstree outside of jstree div */
+	font-size: 10px;
+}
+
+/* jstree file type icons */
+.jstree .folder { background: url('../images/file_sprite.png') right bottom no-repeat; }
+.jstree .file { background: url('../images/file_sprite.png') 0 0 no-repeat; }
+.jstree .file-pdf { background-position: -18px 0 }
+.jstree .file-as { background-position: -36px 0 }
+.jstree .file-c { background-position: -72px 0 }
+.jstree .file-iso { background-position: -108px 0 }
+.jstree .file-htm, .jstree .file-html, .jstree .file-xml, .jstree .file-xsl { background-position: -126px 0 }
+.jstree .file-cf { background-position: -162px 0 }
+.jstree .file-cpp { background-position: -216px 0 }
+.jstree .file-cs { background-position: -236px 0 }
+.jstree .file-sql { background-position: -272px 0 }
+.jstree .file-xls, .jstree .file-xlsx { background-position: -362px 0 }
+.jstree .file-h { background-position: -488px 0 }
+.jstree .file-crt, .jstree .file-pem, .jstree .file-cer { background-position: -452px -18px }
+.jstree .file-php { background-position: -108px -18px }
+.jstree .file-jpg, .jstree .file-jpeg, .jstree .file-png, .jstree .file-gif, .jstree .file-bmp { background-position: -126px -18px }
+.jstree .file-ppt, .jstree .file-pptx { background-position: -144px -18px }
+.jstree .file-rb { background-position: -180px -18px }
+.jstree .file-text, .jstree .file-txt, .jstree .file-md, .jstree .file-log, .jstree .file-htaccess { background-position: -254px -18px }
+.jstree .file-doc, .jstree .file-docx { background-position: -362px -18px }
+.jstree .file-zip, .jstree .file-gz, .jstree .file-tar, .jstree .file-rar { background-position: -416px -18px }
+.jstree .file-js { background-position: -434px -18px }
+.jstree .file-css { background-position: -144px 0 }
+.jstree .file-fla { background-position: -398px 0 }

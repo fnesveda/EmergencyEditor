@@ -1,0 +1,146 @@
+/* ----- GENERAL PAGE STYLE ----- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Grande', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+/* ----- GENERAL PAGE STYLE ----- */
+.main {
+	height: 100%;
+	display: block;
+}
+
+.unsupported-message-wrapper {
+	display: none;
+}
+
+/* ----- UNSUPPORTED BROWSER MESSAGE STYLE ----- */
+/* this has to support at least IE 6, so no fancy CSS */
+.unsupported-message-wrapper {
+	width: 600px;
+	margin: auto;
+}
+
+.unsupported-message-main {
+	font-size: 20px;
+	margin: 100px 10px 20px 10px;
+}
+
+.unsupported-message-additional {
+	font-size: 12px;
+	margin: 0 10px;
+}
+
+.unsupported-message-browser-list {
+	margin-top: 20px;
+}
+
+.unsupported-message-browser-list-item {
+	float: left;
+	margin: 10px;
+	width: 100px;
+	height: 120px;
+}
+
+.unsupported-message-browser-list-item-image {
+	width: 100px;
+	height: 100px;
+}
+
+.unsupported-message-browser-list-item-title {
+	width: 100px;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+/* ----- POPUPS STYLE ----- */
+.popup {
+	display: block;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.popup-hidden {
+	display: none;
+}
+
+.popup-background {
+	background-color: #FFF;
+	z-index: 100;
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.popup-content {
+	border-radius: 3px;
+	box-sizing: border-box;
+	position: absolute;
+	height: 80%;
+	width: 600px;
+	top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	background-color: #FFF;
+	z-index: 101;
+	box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0,0,0,0.15);
+	padding: 24px;
+}
+
+@media print {
+	.popup-content {
+		box-shadow: none;
+		border: solid 1px #DDD;
+	}
+}
+
+.popup-title {
+	font-size: 16px;
+	position: absolute;
+	height: 34px;
+	top: 8px;
+	left: 16px;
+	right: 16px;
+	padding: 8px;
+	box-shadow: 0 4px 4px -4px #888;
+}
+
+@media print {
+	.popup-title {
+		box-shadow: none;
+		border-bottom: solid 1px #DDD;
+	}
+}
+
+.popup-close {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url("../images/close_icon.png"); /* we could use a glyph but this is easier */
+	background-size: contain;
+	width: 10px;
+	height: 10px;
+	margin: 12px;
+	cursor: pointer;
+}

@@ -1,0 +1,497 @@
+/* ----- IDE CONTAINER ----- */
+.container {
+	min-width: 300px;
+	margin: 0 auto;
+	background: white;
+	padding: 0;
+	overflow: hidden;
+}
+
+/* ----- JSTREE STYLE ----- */
+.jstree {
+	font-family: Verdana;
+	font-size: 10px;
+	float: left;
+	width: 300px;
+	border-right: 1px solid silver;
+	overflow: auto;
+	padding: 0;
+}
+
+.tree-search-box-container {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 20px;
+	position: absolute;
+	width: 300px;
+	border-right: 1px solid silver;
+	border-top: 1px solid silver;
+	bottom: 0;
+	left: 0;
+}
+
+.tree-search-box {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 18px;
+	width: 298px;
+	border: 0;
+}
+
+/* ----- MENU STYLE ----- */
+.sm {
+	position: relative;
+	z-index: 99;
+	width: auto;
+}
+
+.menu-item {
+	display: table;
+	width: 100%;
+}
+
+.menu-item-title, .menu-item-keyboard-shortcut {
+	display: table-cell;
+}
+
+.menu-item-keyboard-shortcut:not(:empty) {
+	padding-left: 16px;
+	text-align: right;
+}
+
+.menu-item-keyboard-shortcut-separator {
+	color: #AAA;
+}
+
+/* ----- TABS STYLE ----- */
+.tab-container {
+	font-size: 12px;
+	margin: 0;
+	position: absolute;
+	top: 26px;
+	left: 300px;
+	bottom: 0;
+	right: 0;
+}
+
+.tabbar {
+	display: none;
+	background: #DDD;
+	border-top: solid 1px #BBB;
+	border-bottom: solid 1px #BBB;
+	border-right: solid 1px #BBB;
+	height: 27px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.tab-handle {
+	position: relative;
+	top: 0;
+	background: #DDD;
+	border-color: #BBB;
+	border-width: 1px;
+	border-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	display: inline-block;
+	height: 26px;
+	margin: 0;
+	line-height: 23px;
+	padding-left: 8px;
+	padding-right: 20px;
+	padding-top: 1px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: default;
+}
+
+.tab-handle-modified {
+	color: #F00;
+}
+
+.tab-handle:last-of-type {
+	border-right: solid 1px #BBB;
+}
+
+.tab-handle-active {
+	background: #FFF;
+	border-bottom: none 1px #FFF;
+}
+
+.tabbar > .ui-sortable-helper {
+	border: solid 1px #BBB !important;
+}
+
+.tab-sort-placeholder {
+	background: #BBB;
+	background: repeating-linear-gradient(
+		45deg,
+		#FFF,
+		#FFF 5px,
+		#EEE 5px,
+		#EEE 10px
+	);
+	height: 26px;
+	width: 100px;
+	display: inline-block;
+}
+
+.tab-close-button {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url("../images/close_icon.png");
+	background-size: contain;
+	width: 8px;
+	height: 8px;
+	margin: 8px;
+}
+
+.tab-content {
+	margin: 0;
+	display: none;
+	position: absolute;
+	top: 27px;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+}
+
+/* ----- STATUSBAR STYLE ----- */
+.tab-statusbar {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 20px;
+	padding: 0 3px;
+	border-top: 1px solid silver;
+}
+
+.tab-statusbar-content {
+	line-height: 19px;
+	height: 19px;
+}
+
+.tab-statusbar-left {
+	float: left;
+}
+
+.tab-statusbar-right {
+	float: right;
+}
+
+.tab-statusbar-right-cell {
+	min-width: 120px;
+	margin-left: 10px;
+	float: left;
+	text-align: right;
+}
+
+/* ----- STYLES FOR VARIOUS TAB TYPES ----- */
+
+.tab-editor {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.tab-image {
+	background-color: #FFF;
+}
+
+.tab-image>img {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	max-height: 90%;
+	max-width: 90%;
+}
+
+.tab-dummy-message {
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 0;
+	right: 0;
+	color: #888;
+	margin-top: -0.5em;
+	vertical-align: middle;
+}
+
+.tab-custom-elements-wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.tab-custom-element {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* ----- SQL MANAGER STYLE ----- */
+/* style only for the wrapper, Adminer has its own CSS */
+.sql-manager-iframe {
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+
+/* ----- SCRIPT TESTER STYLE ----- */
+.script-tester-wrapper {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.script-tester-form {
+	display: table-row;
+	height: 30px;
+	width: 100%;
+}
+
+.script-tester-actions-wrapper {
+	width: 100%;
+}
+
+.script-tester-action-wrapper {
+	position: absolute;
+	left: 3px;
+	right: 243px;
+}
+
+.script-tester-action {
+	width: 100%;
+	height: 24px;
+	margin: 3px 0;
+}
+
+.script-tester-submit-button {
+	position: absolute;
+	right: 120px;
+	width: 117px;
+	height: 24px;
+	margin: 3px;
+}
+
+.script-tester-fields-toggle-button {
+	position: absolute;
+	right: 0;
+	width: 120px;
+	height: 24px;
+	margin: 3px;
+}
+
+.script-tester-fields-wrapper {
+	margin-top: 30px;
+}
+
+.script-tester-inputs-wrapper {
+	clear: both;
+	border-bottom: solid 1px #DDD;
+}
+
+.script-tester-input-wrapper {
+	float: left;
+	border: solid 1px #DDD;
+	border-radius: 2px;
+	padding: 2px;
+	margin: 3px 0;
+}
+
+.script-tester-input {
+	height: 24px;
+}
+
+.script-tester-add-input-button {
+	float: left;
+	width: 120px;
+	height: 24px;
+	margin: 6px;
+}
+
+.script-tester-iframe-wrapper {
+	display: table-row;
+	height: 100%;
+}
+
+.script-tester-iframe {
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+
+/* ----- SETTINGS POPUP STYLE ----- */
+.settings-popup-items-wrapper {
+	font-size: 14px;
+	position: absolute;
+	bottom: 16px;
+	padding: 0 8px;
+	top: 44px;
+	left: 16px;
+	right: 16px;
+}
+
+.settings-popup-items {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 8px;
+}
+
+.settings-popup-items-shadow {
+	position: relative;
+	pointer-events: none;
+	height: 32px;
+	margin-top: -32px;
+	width: 100%;
+	box-shadow: 0 -16px 8px -8px #FFF inset;
+}
+
+@media print {
+	.settings-popup-items-shadow {
+		box-shadow: none;
+	}
+}
+
+.settings-popup-item {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	border-bottom: solid 1px #DDD;
+}
+
+.settings-popup-item-separator-after {
+	height: 48px;
+	margin-bottom: 8px;
+	border-bottom: solid 1px #AAA;
+}
+
+.settings-popup-item:last-of-type {
+	height: 30px;
+	border-bottom: none;
+}
+
+.settings-popup-item>input {
+	text-align: right;
+	width: 80px;
+}
+
+.settings-popup-item>input[type="checkbox"] {
+	display: none;
+}
+
+.settings-popup-item>input[type="checkbox"] + label {
+	float: right;
+	position: relative;
+	top: 12px;
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 16px 32px;
+	font-size: 20px;
+	cursor: pointer;
+	background-image: url("../images/checkbox_background.png");
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.settings-popup-item>input[type=checkbox]:checked + label {
+	background-position: 0 -16px;
+}
+
+.settings-popup-item>input:not([type="checkbox"]), .settings-popup-item>select{
+	float: right;
+	position: relative;
+	top: 8px;
+	margin-right: 0;
+}
+
+/* ----- ERROR POPUP STYLE ----- */
+.error-popup-content {
+	height: 40%;
+	top: 30%;
+}
+
+.error-popup-text {
+	font-size: 14px;
+	position: absolute;
+	bottom: 16px;
+	padding: 0 8px;
+	top: 52px;
+	left: 20px;
+	right: 0;
+}
+
+/* ----- UPLOAD POPUP STYLE ----- */
+.dropzone {
+	font-size: 14px;
+	position: absolute;
+	bottom: 16px;
+	padding: 0 8px;
+	top: 42px;
+	left: 16px;
+	right: 16px;
+	border: 2px dashed #3498DB;
+	border-radius: 3px;
+}
+
+.upload-popup-form {
+	font-size: 14px;
+	overflow: auto;
+	position: absolute;
+	bottom: 24px;
+	padding: 0 16px;
+	top: 44px;
+	left: 16px;
+	right: 16px;
+}
+/* vertically center the dropzone message */
+.dropzone .dz-message {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #888;
+}
+
+.dz-started .dz-message {
+	display: none;
+}
+
+.dropzone .dz-message span {
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin-top: -0.5em;
+	vertical-align: middle;
+}

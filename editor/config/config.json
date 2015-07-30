@@ -1,0 +1,5 @@
+{
+	"root": "..",
+	"blacklist": [".gitignore", ".git", "editor", "data/forbidden", "data/subdirectory/forbidden.file"],
+	"version-control-folder": ".eervsn"
+}
