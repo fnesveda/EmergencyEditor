@@ -1,0 +1,19 @@
+#AuthUserFile /absolute/path/to/.htpasswd
+#AuthType Basic
+#AuthName "Emergency Editor"
+#Require valid-user
+
+RewriteEngine On
+RewriteRule ^rvsn/commits/?$ index.php?action=page&page=rvsn&view=commits [L,QSA]
+RewriteRule ^rvsn/commits/([A-Za-z0-9]+)/?$ index.php?action=page&page=rvsn&view=commits&commit=$1 [L,QSA]
+
+RewriteRule ^rvsn/compare/?$ index.php?action=page&page=rvsn&view=compare [L,QSA]
+RewriteRule ^rvsn/compare/([A-Za-z0-9]+)/([A-Za-z0-9]+)/?$ index.php?action=page&page=rvsn&view=compare&olderCommit=$1&newerCommit=$2 [L,QSA]
+RewriteRule ^rvsn/compare/([A-Za-z0-9]+)/([A-Za-z0-9]+)/(.*)/?$ index.php?action=page&page=rvsn&view=compare&olderCommit=$1&newerCommit=$2&itemID=$3 [L,QSA]
+
+RewriteRule ^rvsn/browse/?$ index.php?action=page&page=rvsn&view=browse [L,QSA]
+RewriteRule ^rvsn/browse/([A-Za-z0-9]+)/?$ index.php?action=page&page=rvsn&view=browse&commit=$1 [L,QSA]
+
+RewriteRule ^rvsn/([^/]*)/?$ index.php?action=page&page=rvsn&view=$1 [L,QSA]
+
+RewriteRule ^([^/]*)/?$ index.php?action=page&page=$1 [L,QSA]

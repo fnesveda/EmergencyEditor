@@ -1,0 +1,253 @@
+.sm-small {
+	border-bottom:1px solid #bbb;
+	background:#fff;
+	box-shadow:0 1px 1px rgba(0,0,0,0.2);
+}
+.sm-small a, .sm-small a:hover, .sm-small a:focus, .sm-small a:active {
+	padding:4px 20px;
+	/* make room for the toggle button (sub indicator) */
+	padding-right: 58px;
+	color: #555555;
+	font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 17px;
+	text-decoration: none;
+}
+.sm-small a.current {
+	background:#3498DB;
+	color:#FFF;
+}
+.sm-small a.disabled{
+	background: none;
+	color: #888;
+}
+
+.sm-small a span.sub-arrow {
+	display: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	left: auto;
+	right: 4px;
+	width: 34px;
+	height: 34px;
+	overflow: hidden;
+	font: bold 14px/34px monospace !important;
+	text-align: center;
+	text-shadow: none;
+	background: rgba(0, 0, 0, 0.08);
+}
+.sm-small a.highlighted span.sub-arrow:before {
+	display: block;
+	content: '-';
+}
+
+.sm-small ul {
+	border-bottom:1px solid #bbb;
+	background:#fff;
+	box-shadow:0 1px 1px rgba(0,0,0,0.2);
+	padding-bottom: 5px;
+	border-top: 1px solid #eee;
+}
+.sm-small ul a, .sm-small ul a:hover, .sm-small ul a:focus, .sm-small ul a:active {
+	font-size: 14px;
+	border-left: 8px solid transparent;
+}
+.sm-small ul ul a,
+.sm-small ul ul a:hover,
+.sm-small ul ul a:focus,
+.sm-small ul ul a:active {
+	border-left: 16px solid transparent;
+}
+.sm-small ul ul ul a,
+.sm-small ul ul ul a:hover,
+.sm-small ul ul ul a:focus,
+.sm-small ul ul ul a:active {
+	border-left: 24px solid transparent;
+}
+.sm-small ul ul ul ul a,
+.sm-small ul ul ul ul a:hover,
+.sm-small ul ul ul ul a:focus,
+.sm-small ul ul ul ul a:active {
+	border-left: 32px solid transparent;
+}
+.sm-small ul ul ul ul ul a,
+.sm-small ul ul ul ul ul a:hover,
+.sm-small ul ul ul ul ul a:focus,
+.sm-small ul ul ul ul ul a:active {
+	border-left: 40px solid transparent;
+}
+
+.sm-small .sm-separator	{
+	margin-top: 5px;
+	border-top: solid 1px #bbb;
+	margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+	/* Switch to desktop layout
+	-----------------------------------------------
+		 These transform the menu tree from
+		 collapsible to desktop (navbar + dropdowns)
+	-----------------------------------------------*/
+	/* start... (it's not recommended editing these rules) */
+	.sm-small ul {
+		position: absolute;
+	}
+
+	.sm-small li {
+		float: left;
+	}
+
+	.sm-small.sm-rtl li {
+		float: right;
+	}
+
+	.sm-small ul li, .sm-small.sm-rtl ul li, .sm-small.sm-vertical li {
+		float: none;
+	}
+
+	.sm-small a {
+		white-space: nowrap;
+	}
+
+	.sm-small ul a, .sm-small.sm-vertical a {
+		white-space: normal;
+	}
+
+	.sm-small .sm-nowrap > li > a, .sm-small .sm-nowrap > li > :not(ul) a {
+		white-space: nowrap;
+	}
+
+	/* ...end */
+	.sm-small {
+		background: white;
+	}
+	.sm-small a, .sm-small a:hover, .sm-small a:focus, .sm-small a:active, .sm-small a.highlighted {
+		padding: 4px 20px;
+		color: #555555;
+	}
+	.sm-small a:hover, .sm-small a:active, .sm-small a.highlighted {
+		background:#3498DB;
+		color:#FFF;
+	}
+	.sm-small a.current {
+		background: #555555;
+		color: white;
+	}
+	.sm-small a.disabled {
+		background: white;
+		color: #888;
+	}
+	.sm-small a.has-submenu {
+		/* padding-right: 32px; */
+	}
+	.sm-small a span.sub-arrow {
+		display: none;
+		top: 50%;
+		margin-top: -8px;
+		right: 20px;
+		width: 8px;
+		height: 16px;
+		font: 14px/16px monospace !important;
+		background: transparent;
+	}
+	.sm-small a.highlighted span.sub-arrow:before {
+		display: none;
+	}
+	.sm-small > li {
+		border-top: 0;
+		border-left: 1px solid #eeeeee;
+	}
+	.sm-small > li:first-child {
+		border-left: 0;
+	}
+	.sm-small ul {
+		background: white;
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	}
+	.sm-small ul a {
+		border: 0 !important;
+	}
+	.sm-small ul a.has-submenu {
+		/* padding-right: 20px; */
+	}
+	.sm-small ul a span.sub-arrow {
+		right: auto;
+		margin-left: -12px;
+	}
+	.sm-small ul > li {
+		border-left: 0;
+	}
+	.sm-small ul > li:first-child {
+		border-top: 0;
+	}
+	.sm-small span.scroll-up,
+	.sm-small span.scroll-down {
+		position: absolute;
+		display: none;
+		visibility: hidden;
+		overflow: hidden;
+		background: white;
+		height: 20px;
+	}
+	.sm-small span.scroll-up-arrow, .sm-small span.scroll-down-arrow {
+		position: absolute;
+		top: -2px;
+		left: 50%;
+		margin-left: -8px;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+		border-width: 8px;
+		border-style: dashed dashed solid dashed;
+		border-color: transparent transparent #555555 transparent;
+	}
+	.sm-small span.scroll-down-arrow {
+		top: 6px;
+		border-style: solid dashed dashed dashed;
+		border-color: #555555 transparent transparent transparent;
+	}
+	.sm-small.sm-rtl a.has-submenu {
+		/* padding-right: 20px;
+		padding-left: 32px; */
+	}
+	.sm-small.sm-rtl a span.sub-arrow {
+		right: auto;
+		left: 20px;
+	}
+	.sm-small.sm-rtl.sm-vertical a.has-submenu {
+		/* padding: 11px 20px; */
+	}
+	.sm-small.sm-rtl.sm-vertical a span.sub-arrow {
+		right: 20px;
+		margin-right: -12px;
+	}
+	.sm-small.sm-rtl > li:first-child {
+		border-left: 1px solid #eeeeee;
+	}
+	.sm-small.sm-rtl > li:last-child {
+		border-left: 0;
+	}
+	.sm-small.sm-rtl ul a.has-submenu {
+		/* padding: 11px 20px; */
+	}
+	.sm-small.sm-rtl ul a span.sub-arrow {
+		right: 20px;
+		margin-right: -12px;
+	}
+	.sm-small.sm-vertical a span.sub-arrow {
+		right: auto;
+		margin-left: -12px;
+	}
+	.sm-small.sm-vertical li {
+		border-left: 0;
+		border-top: 1px solid #eeeeee;
+	}
+	.sm-small.sm-vertical > li:first-child {
+		border-top: 0;
+	}
+}
