@@ -2,6 +2,8 @@
 
 My goal is to make a minimalist code editor attachable to your webpage and enabling you to edit your webpage from itself.
 
+![Emergency Editor screenshot](https://raw.githubusercontent.com/fnesveda/EmergencyEditor/master/editor/images/screenshot.png)
+
 ### Installation
 Download the release of the project here from the [releases tab](https://github.com/fnesveda/EmergencyEditor/releases) and copy the _editor_ folder to the root of your webpage project. Now you can access the editor by visiting _`http://your.webpage.address/editor`_.
 If you have some rewrite rules in place, you need to tweak them to be able to access the editor.
