@@ -77,8 +77,7 @@ function main() {
 			editor = ace.edit('editor');
 
 			// load settings currently saved in the cookie and combine them with the default ones
-			$.cookie.json = true;
-			$.extend(aceUserOptions, $.cookie('ace-options'));
+			$.extend(aceUserOptions, Cookies.getJSON('ace-options'));
 			
 			// set editor options
 			editor.setOptions(aceOptions);
