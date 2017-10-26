@@ -13,7 +13,7 @@
 		<script src="./lib/ace/src-min-noconflict/ext-modelist.js"></script>
 		<script src="./lib/ace/src-min-noconflict/ext-language_tools.js"></script>
 
-		<script src="./lib/cookie/jquery.cookie.js"></script>
+		<script src="./lib/cookie/js.cookie.min.js"></script>
 
 		<script src="./lib/dropzone/dropzone.min.js"></script>
 		<link  href="./lib/dropzone/dropzone.min.css" rel="stylesheet" type="text/css" />

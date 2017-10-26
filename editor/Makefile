@@ -25,7 +25,7 @@ adminer :
 cookie :
 	rm -rf lib/cookie
 	mkdir -p lib/cookie
-	curl -L https://raw.githubusercontent.com/carhartl/jquery-cookie/master/src/jquery.cookie.js -o lib/cookie/jquery.cookie.js
+	curl -L https://www.github.com/js-cookie/js-cookie/releases/download/v2.1.4/js.cookie-2.1.4.min.js -o lib/cookie/js.cookie.min.js
 	
 dropzone :
 	rm -rf lib/dropzone

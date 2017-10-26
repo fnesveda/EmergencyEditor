@@ -430,7 +430,7 @@ function main() {
 	 * @function saveAceOptions
 	 */
 	window.saveAceOptions = function() {
-		$.cookie('ace-options', aceUserOptions, { expires: 5*365, path: '/' });
+		Cookies.set('ace-options', aceUserOptions, { expires: 5*365, path: '/' });
 	};
 	
 	/**
@@ -450,8 +450,7 @@ function main() {
 		});
 
 		// load settings currently saved in the cookie and combine them with the default ones
-		$.cookie.json = true;
-		$.extend(aceUserOptions, $.cookie('ace-options'));
+		$.extend(aceUserOptions, Cookies.getJSON('ace-options'));
 		// save them back to the cookie
 		saveAceOptions();
 		
